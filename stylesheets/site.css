@@ -1,18 +1,19 @@
 #page{
     width: 80%; margin: 0 auto;
     font-family:sans-serif;
+    background-color:lightgray;
 
 }
 
 .logo{
-    height:50px;
-    width: 80px;
+    height:60px;
+    width: 100px;
 }
 
 .bg{
     width: 100%;
     min-height:100vh;
-    background-image:url(images/domotronics_picture.jpeg);
+    background-image :url(images/domotronics_picture.jpeg);
     background-position: center;
     background-size: cover;
     padding: 10px 10px;
@@ -21,9 +22,10 @@
 }
 
 #banner{
-    background-color: darkgrey;
-    background-size: 50%;
-    text-align:center;
+    background-color:#6d7c99;
+    background-size :contain;
+    text-align :left;
+    font-size :xx-large;
     
 }
 
@@ -53,4 +55,76 @@
 #nav a:hover{
     color:rgb(59, 78, 95);
 
+}
+
+.lbtn{
+    text-decoration: none;
+    color:#333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.dbtn{
+    display: inline block;
+    text-decoration:none;
+    padding: 14px 40px;
+    color:aquamarine;
+    background-image: linear-gradient(45deg, #6d7c99, #479042);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius:0;
+    transition: 0.5s;
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size:70px;
+    color:#333;
+}
+
+.content p{
+
+    font-size: 10px 0 30px;
+    color:#333;
+    animation-delay: 1s;
+}
+
+.content .dbtn{
+    padding: 15px 80px;
+    font size: 16px;
+    animation-delay: 1.5s;
+}
+
+.dbtn:hover{
+    border-top-right-radius: 30px;
+    color:rgb(59, 78, 95);
+}
+
+.newest-addition{
+    width: 330px;
+    position:absolute;
+    bottom: 0;
+    right: 15%;
+    top: 25%;
+}
+
+.newest-addition .anim{
+    animation-delay: 2s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
